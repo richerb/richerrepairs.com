@@ -68,3 +68,16 @@ header { background:#111827; color:#fff; position: sticky; top:0; z-index: 10; }
   filter: grayscale(0%);
   opacity: 1;
 }
+.logo-main {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+.logo-sub {
+  display: block;
+  font-size: 12px;
+  opacity: 0.85;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
