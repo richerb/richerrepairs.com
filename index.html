@@ -1,195 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- SEO -->
-  <title>Richer Repairs | Small Engine Repair & Lawn Equipment Service</title>
-  <meta name="description" content="Small engine repair, lawn mower service, snow blower repair, and outdoor equipment maintenance. Fast, reliable service. Call today.">
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      line-height: 1.6;
-      background: #f7f7f7;
-      color: #333;
-    }
-
-    header {
-      background: #1f2937;
-      color: white;
-      padding: 20px 40px;
-      position: sticky;
-      top: 0;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .hero {
-      text-align: center;
-      background: #111827;
-      color: white;
-      padding: 100px 20px;
-    }
-
-    .btn {
-      background: #16a34a;
-      color: white;
-      padding: 14px 24px;
-      text-decoration: none;
-      border-radius: 6px;
-      display: inline-block;
-      margin-top: 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-
-    .price {
-      font-size: 22px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    footer {
-      background: #1f2937;
-      color: white;
-      text-align: center;
-      padding: 30px;
-      margin-top: 40px;
-    }
-
-    /* Floating call button */
-    .call-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #16a34a;
-      color: white;
-      padding: 16px 22px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0,0,0,.2);
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Richer Repairs | Small Engine Repair</title>
+  <meta name="description" content="Small engine repair for lawn mowers, snow blowers, chainsaws, trimmers, generators and more. Fast, reliable service." />
+  <link rel="canonical" href="https://www.richerrepairs.com/" />
+  <link rel="stylesheet" href="/assets/styles.css" />
 </head>
-
 <body>
-
-<header>
-  <nav>
-    <h2>Richer Repairs</h2>
-    <div>
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
+  <header>
+    <div class="nav">
+      <div class="brand">Richer Repairs</div>
+      <div class="navlinks">
+        <a href="/#machines">Equipment</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/#contact">Contact</a>
+      </div>
     </div>
-  </nav>
-</header>
+  </header>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Small Engine Repair Done Right</h1>
-  <p>Fast • Reliable • Affordable</p>
-  <a href="tel:2158172407" class="btn">Call Now</a>
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-  <h2>Services</h2>
-  <div class="grid">
-    <div class="card">Lawn Mower Repair & Tune-Ups</div>
-    <div class="card">Snow Blower Service</div>
-    <div class="card">Chainsaw & Trimmer Repair</div>
-    <div class="card">Oil Changes & Seasonal Maintenance</div>
-    <div class="card">Carburetor Cleaning</div>
-    <div class="card">Pickup & Delivery Available</div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section id="pricing">
-  <h2>Pricing</h2>
-  <div class="grid">
-    <div class="card">
-      Tune-Up
-      <div class="price">$79+</div>
-    </div>
-
-    <div class="card">
-      Blade Sharpening
-      <div class="price">$20</div>
-    </div>
-
-    <div class="card">
-      Diagnostic
-      <div class="price">$45</div>
+  <div class="hero">
+    <div class="container">
+      <div class="kicker">Small Engine Repair</div>
+      <h1>Keep your equipment running strong.</h1>
+      <p>Honest diagnostics, fast turnaround, and quality repairs for the machines you rely on—mowers, snow blowers, chainsaws, trimmers, generators, and more.</p>
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="tel:2158172407">Call (215) 817-2407</a>
+        <a class="btn btnGhost" href="mailto:ben@richerrepairs.com?subject=Service%20Request%20-%20Richer%20Repairs">Request Service</a>
+      </div>
     </div>
   </div>
-  <p>*Final price depends on parts & labor.</p>
-</section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
+  <main class="container">
+    <section class="section" id="machines">
+      <h2>Equipment We Service</h2>
+      <div class="grid">
+        <div class="card">
+          <a href="/machines/lawn-mowers.html">
+            <h3>Lawn Mowers</h3>
+            <div class="small">Tune-ups, carb clean, belts, blades, starting issues, and more.</div>
+            <div class="badges">
+              <span class="badge">Tune-up</span><span class="badge">Carb</span><span class="badge">Drive</span>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="/machines/snow-blowers.html">
+            <h3>Snow Blowers</h3>
+            <div class="small">Seasonal service, auger/drive issues, shear pins, starting problems.</div>
+            <div class="badges">
+              <span class="badge">Seasonal</span><span class="badge">Auger</span><span class="badge">Drive</span>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="/machines/chainsaws-trimmers.html">
+            <h3>Chainsaws & Trimmers</h3>
+            <div class="small">Fuel delivery, idle issues, pull-start, sharpening, performance fixes.</div>
+            <div class="badges">
+              <span class="badge">2-stroke</span><span class="badge">Sharpen</span><span class="badge">Starts</span>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="/machines/generators.html">
+            <h3>Generators</h3>
+            <div class="small">No-start, surging, maintenance, fuel system service, reliability checks.</div>
+            <div class="badges">
+              <span class="badge">No-start</span><span class="badge">Surge</span><span class="badge">Maintenance</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <p><strong>Email:</strong> <a href="mailto:ben@richerrepairs.com">ben@richerrepairs.com</a></p>
-  <p><strong>Phone:</strong> <a href="tel:2158172407">(215) 817-2407</a></p>
+    <section class="section" id="pricing">
+      <h2>Typical Pricing</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Diagnostic</h3>
+          <div class="small">Baseline evaluation + estimate.</div>
+          <div style="margin-top:10px;font-weight:900;font-size:22px;">$45+</div>
+        </div>
+        <div class="card">
+          <h3>Tune-Up</h3>
+          <div class="small">Seasonal service (varies by machine).</div>
+          <div style="margin-top:10px;font-weight:900;font-size:22px;">$79+</div>
+        </div>
+        <div class="card">
+          <h3>Blade Sharpening</h3>
+          <div class="small">Mower blades (per blade).</div>
+          <div style="margin-top:10px;font-weight:900;font-size:22px;">$20</div>
+        </div>
+      </div>
+      <p class="small" style="margin-top:10px;">Final price depends on parts and labor. We’ll confirm before proceeding.</p>
+    </section>
 
-  <!-- Contact button -->
-  <a class="btn" href="mailto:ben@richerrepairs.com?subject=Service Request">
-    Request Service
-  </a>
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="split">
+        <div class="card">
+          <h3>Request Service</h3>
+          <p class="small">Email us the machine type, brand/model, and what it’s doing (or not doing). Photos help.</p>
+          <div class="ctaRow">
+            <a class="btn btnPrimary" href="mailto:ben@richerrepairs.com?subject=Service%20Request%20-%20Richer%20Repairs">Email Request</a>
+            <a class="btn" style="border:1px solid rgba(17,24,39,.12); background:#fff;" href="tel:2158172407">Call</a>
+          </div>
+          <ul class="list">
+            <li><strong>Email:</strong> <a href="mailto:ben@richerrepairs.com">ben@richerrepairs.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:2158172407">(215) 817-2407</a></li>
+          </ul>
+        </div>
 
-  <br><br>
+        <div class="card">
+          <h3>Service Area</h3>
+          <p class="small">Update this map to your exact address when you’re ready.</p>
+          <div style="margin-top:10px;">
+            <iframe
+              width="100%" height="260" style="border:0;border-radius:12px;"
+              loading="lazy" allowfullscreen
+              src="https://maps.google.com/maps?q=Main%20Line%20Pennsylvania&t=&z=11&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <!-- Google Map (replace with your address if desired) -->
-  <iframe
-    width="100%"
-    height="350"
-    style="border:0"
-    loading="lazy"
-    allowfullscreen
-    src="https://maps.google.com/maps?q=Pennsylvania&t=&z=11&ie=UTF8&iwloc=&output=embed">
-  </iframe>
-</section>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Richer Repairs • www.richerrepairs.com • Reliable Small Engine Service</p>
+    </div>
+  </footer>
 
-<footer>
-  © 2026 Richer Repairs | Small Engine Repair
-</footer>
-
-<!-- Floating mobile call button -->
-<a class="call-btn" href="tel:2158172407">📞 Call</a>
-
+  <a class="callFloat" href="tel:2158172407">📞 Call</a>
 </body>
 </html>
