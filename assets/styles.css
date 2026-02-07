@@ -176,9 +176,10 @@ header {
 .logoCard {
   width: 100%;
   max-width: 220px;
-  background: #fff;
+  height: 120px;                 /* 🔑 fixed height */
+  background: #ffffff;
   border-radius: 14px;
-  padding: 18px;
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,16 +189,19 @@ header {
 
 .logoCard img {
   max-width: 100%;
-  max-height: 60px;
+  max-height: 64px;   /* 🔑 consistent logo size */
   width: auto;
   height: auto;
   display: block;
   filter: grayscale(100%);
-  opacity: .85;
+  opacity: 0.85;
   transition: filter .15s ease, opacity .15s ease;
 }
 
-.logoCard img:hover { filter: grayscale(0%); opacity: 1; }
+.logoCard:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
 
 /* Logo image in header */
 .site-logo {
