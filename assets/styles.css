@@ -243,3 +243,13 @@ header {
   border: none;
   box-shadow: 0 8px 20px rgba(16,185,129,0.35);
 }
+/* Call button on Request Service page */
+.btnRequestCall {
+  background: #111827;        /* dark, high contrast */
+  color: #ffffff;
+  border: none;
+}
+
+.btnRequestCall:hover {
+  background: #1f2937;
+}
