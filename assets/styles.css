@@ -1,10 +1,9 @@
 /* =========================
-   Richer Repairs - Clean CSS
+   Richer Repairs - Styles
    ========================= */
 
 /* Reset */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -16,7 +15,9 @@ body {
 
 a { color: inherit; }
 
-/* Header / Nav */
+/* =========================
+   Header / Nav
+   ========================= */
 header {
   background: #111827;
   color: #fff;
@@ -36,7 +37,11 @@ header {
   gap: 16px;
 }
 
-.brand { display: flex; align-items: center; gap: 10px; }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .navlinks {
   display: flex;
@@ -58,14 +63,18 @@ header {
   background: rgba(255,255,255,.08);
 }
 
-/* Layout */
+/* =========================
+   Layout
+   ========================= */
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Hero */
+/* =========================
+   Hero
+   ========================= */
 .hero {
   background:
     linear-gradient(135deg, rgba(17,24,39,0.95), rgba(31,41,55,0.9)),
@@ -82,7 +91,9 @@ header {
 
 .hero p { margin-top: 12px; opacity: .92; max-width: 70ch; }
 
-/* Buttons */
+/* =========================
+   Buttons
+   ========================= */
 .ctaRow { margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap; }
 
 .btn {
@@ -96,28 +107,62 @@ header {
 .btnPrimary { background: #10b981; color: #fff; }
 .btnPrimary:hover { background: #059669; }
 
-.btnGhost { border: 1px solid rgba(255,255,255,.35); color: #fff; }
+.btnGhost {
+  border: 1px solid rgba(255,255,255,.35);
+  color: #fff;
+}
 
-/* Sections / Cards */
+/* Special buttons used on specific pages */
+.btnThanksCall {
+  background: #10b981;
+  color: #fff;
+  border: none;
+  box-shadow: 0 8px 20px rgba(16,185,129,0.35);
+}
+.btnThanksCall:hover { background: #059669; }
+
+.btnRequestCall {
+  background: #111827;
+  color: #fff;
+  border: none;
+  box-shadow: 0 8px 20px rgba(17,24,39,0.35);
+}
+.btnRequestCall:hover { background: #1f2937; }
+
+/* =========================
+   Sections / Cards / Grid
+   ========================= */
 .section { padding: 55px 0; }
 
 .section h2 { font-size: 28px; margin-bottom: 18px; }
 
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+.small { color: #4b5563; font-size: 14px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  align-items: stretch; /* keeps cards even height in each row */
+}
 
 .card {
   background: #fff;
   border-radius: 16px;
   padding: 18px;
-  box-shadow: 0 8px 22px rgba(0,0,0,.07);
   border: 1px solid rgba(17,24,39,.06);
+  box-shadow: 0 8px 22px rgba(0,0,0,.07);
+  height: 100%;
+  transition: transform 0.15s ease, box-shadow 0.15s ease; /* hover lift */
 }
 
 .card a { text-decoration: none; display: block; }
 
 .card h3 { font-size: 18px; margin-bottom: 6px; }
 
-.small { color: #4b5563; font-size: 14px; }
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
 
 /* Badges */
 .badges { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
@@ -131,7 +176,9 @@ header {
   border-radius: 999px;
 }
 
-/* Contact split */
+/* =========================
+   Contact split
+   ========================= */
 .split {
   display: grid;
   grid-template-columns: 1.2fr .8fr;
@@ -139,14 +186,78 @@ header {
   align-items: start;
 }
 
-@media (max-width: 900px) { .split { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+  .split { grid-template-columns: 1fr; }
+}
 
 /* Lists */
 .list { margin-top: 10px; padding-left: 18px; }
 .list li { margin: 6px 0; }
 
-/* Footer + Floating Call */
-.footer { margin-top: 30px; padding: 28px 0; background: #111827; color: #fff; }
+/* =========================
+   Brands Logo Grid
+   ========================= */
+.logoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 22px;
+  align-items: center;
+  justify-items: center;
+}
+
+.logoCard {
+  width: 100%;
+  max-width: 220px;
+  height: 120px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  border: 1px solid rgba(17,24,39,.06);
+}
+
+.logoCard img {
+  max-width: 100%;
+  max-height: 64px;
+  width: auto;
+  height: auto;
+  display: block;
+  filter: grayscale(100%);
+  opacity: .85;
+  transition: filter .15s ease, opacity .15s ease;
+}
+
+.logoCard:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* =========================
+   Header logo
+   ========================= */
+.site-logo {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+/* Keep these if you ever switch back to a text logo */
+.logo-main { font-size: 22px; font-weight: 900; letter-spacing: .5px; }
+.logo-sub  { display: block; font-size: 12px; opacity: .85; letter-spacing: 1px; text-transform: uppercase; }
+
+/* =========================
+   Footer + Floating Call
+   ========================= */
+.footer {
+  margin-top: 30px;
+  padding: 28px 0;
+  background: #111827;
+  color: #fff;
+}
+
 .footer p { opacity: .9; }
 
 .callFloat {
@@ -164,93 +275,11 @@ header {
 
 .callFloat:hover { background: #059669; }
 
-/* Brand logos grid */
-.logoGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 22px;
-  align-items: center;
-  justify-items: center;
-}
-
-.logoCard {
-  width: 100%;
-  max-width: 220px;
-  height: 120px;                 /* 🔑 fixed height */
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,.06);
-  border: 1px solid rgba(17,24,39,.06);
-}
-
-.logoCard img {
-  max-width: 100%;
-  max-height: 64px;   /* 🔑 consistent logo size */
-  width: auto;
-  height: auto;
-  display: block;
-  filter: grayscale(100%);
-  opacity: 0.85;
-  transition: filter .15s ease, opacity .15s ease;
-}
-
-.logoCard:hover img {
-  filter: grayscale(0%);
-  opacity: 1;
-}
-
-/* Logo image in header */
-.site-logo {
-  height: 48px;
-  width: auto;
-  display: block;
-}
-
-.grid {
-  align-items: stretch;
-}
-
-.card {
-  height: 100%;
-}
-
-/* Keep these if you ever switch back to a text logo */
-.logo-main { font-size: 22px; font-weight: 900; letter-spacing: .5px; }
-.logo-sub  { display: block; font-size: 12px; opacity: .85; letter-spacing: 1px; text-transform: uppercase; }
-
-/* Small device tweaks */
+/* =========================
+   Small device tweaks
+   ========================= */
 @media (max-width: 520px) {
   .container { padding: 0 16px; }
   .nav { padding: 12px 16px; }
   .site-logo { height: 40px; }
-}
-/* Subtle hover lift for cards */
-.card {
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
-}
-.btnThanksCall {
-  background: #10b981;
-  color: #ffffff;
-  border: none;
-  box-shadow: 0 8px 20px rgba(16,185,129,0.35);
-}
-/* Call button on Request Service page */
-.btnRequestCall {
-  background: #111827;
-  color: #ffffff;
-  border: none;
-  box-shadow: 0 8px 20px rgba(17,24,39,0.35);
-}
-
-.btnRequestCall:hover {
-  background: #1f2937;
 }
