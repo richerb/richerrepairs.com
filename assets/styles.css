@@ -245,9 +245,10 @@ header {
 }
 /* Call button on Request Service page */
 .btnRequestCall {
-  background: #111827;        /* dark, high contrast */
+  background: #111827;
   color: #ffffff;
   border: none;
+  box-shadow: 0 8px 20px rgba(17,24,39,0.35);
 }
 
 .btnRequestCall:hover {
