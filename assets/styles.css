@@ -334,3 +334,7 @@ header .btnGhost:hover {
   .nav { padding: 12px 16px; }
   .site-logo { height: 40px; }
 }
+
+.navlinks a {
+  white-space: nowrap;
+}
