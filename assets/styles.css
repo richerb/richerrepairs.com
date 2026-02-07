@@ -210,6 +210,14 @@ header {
   display: block;
 }
 
+.grid {
+  align-items: stretch;
+}
+
+.card {
+  height: 100%;
+}
+
 /* Keep these if you ever switch back to a text logo */
 .logo-main { font-size: 22px; font-weight: 900; letter-spacing: .5px; }
 .logo-sub  { display: block; font-size: 12px; opacity: .85; letter-spacing: 1px; text-transform: uppercase; }
