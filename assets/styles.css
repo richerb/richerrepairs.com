@@ -14,6 +14,13 @@ body {
 }
 
 a { color: inherit; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* Improve keyboard accessibility */
+:focus-visible {
+  outline: 3px solid rgba(16,185,129,.7);
+  outline-offset: 3px;
+}
 
 /* =========================
    Header / Nav
@@ -56,11 +63,23 @@ header {
   font-weight: 700;
   padding: 6px 8px;
   border-radius: 10px;
+  white-space: nowrap; /* prevents "on." wrapping */
 }
 
 .navlinks a:hover {
   opacity: 1;
   background: rgba(255,255,255,.08);
+}
+
+/* Optional: on very small screens, keep nav usable without ugly wraps */
+@media (max-width: 420px) {
+  .navlinks {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .navlinks::-webkit-scrollbar { display: none; }
 }
 
 /* =========================
@@ -125,20 +144,16 @@ header {
   color: #ffffff;
 }
 
-.btnPrimary:hover {
-  background: #059669;
-}
+.btnPrimary:hover { background: #059669; }
 
-/* Ghost – adaptive */
+/* Ghost – adaptive (light backgrounds) */
 .btnGhost {
   border: 1px solid rgba(17,24,39,.25);
   color: #111827;
   background: transparent;
 }
 
-.btnGhost:hover {
-  background: rgba(17,24,39,.06);
-}
+.btnGhost:hover { background: rgba(17,24,39,.06); }
 
 /* Ghost on dark backgrounds */
 .hero .btnGhost,
@@ -160,9 +175,7 @@ header .btnGhost:hover {
   box-shadow: 0 8px 20px rgba(16,185,129,.35);
 }
 
-.btnThanksCall:hover {
-  background: #059669;
-}
+.btnThanksCall:hover { background: #059669; }
 
 /* =========================
    Sections / Cards
@@ -196,10 +209,7 @@ header .btnGhost:hover {
   transition: transform .15s ease, box-shadow .15s ease;
 }
 
-.card a {
-  text-decoration: none;
-  display: block;
-}
+.card a { text-decoration: none; display: block; }
 
 .card h3 {
   font-size: 18px;
@@ -247,7 +257,6 @@ header .btnGhost:hover {
   margin-top: 10px;
   padding-left: 18px;
 }
-
 .list li { margin: 6px 0; }
 
 /* =========================
@@ -294,7 +303,6 @@ header .btnGhost:hover {
 .site-logo {
   height: 48px;
   width: auto;
-  display: block;
 }
 
 /* =========================
@@ -322,9 +330,7 @@ header .btnGhost:hover {
   box-shadow: 0 10px 24px rgba(0,0,0,.22);
 }
 
-.callFloat:hover {
-  background: #059669;
-}
+.callFloat:hover { background: #059669; }
 
 /* =========================
    Mobile Tweaks
@@ -333,8 +339,4 @@ header .btnGhost:hover {
   .container { padding: 0 16px; }
   .nav { padding: 12px 16px; }
   .site-logo { height: 40px; }
-}
-
-.navlinks a {
-  white-space: nowrap;
 }
