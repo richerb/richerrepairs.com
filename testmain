@@ -1,0 +1,230 @@
+<!-- =========================
+     FILE: index.html
+     Richer Repairs™ - Umbrella Home Page (Home / Auto / Small Engine)
+     ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Richer Repairs™ | Home • Auto • Small Engine Repair</title>
+  <meta name="description" content="Richer Repairs™ provides reliable home repairs, auto repairs, and small engine repairs. Honest diagnostics, quality work, and fast turnaround. Serving Worcester, PA and surrounding areas." />
+  <link rel="canonical" href="https://www.richerrepairs.com/" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/favicon.png">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <a href="/" aria-label="Richer Repairs Home">
+          <img src="/assets/logo.png" alt="Richer Repairs™" class="site-logo">
+        </a>
+      </div>
+
+      <div class="navlinks">
+        <a href="/services/">Services</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/request-service.html">Request Service</a>
+        <a href="/#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="container">
+      <div class="kicker">Home • Auto • Small Engine</div>
+      <h1>One trusted name for repairs at home, in the garage, and outdoors.</h1>
+      <p>
+        Richer Repairs™ provides dependable repair and maintenance across three core categories:
+        <strong>home repairs</strong>, <strong>auto repairs</strong>, and <strong>small engine repairs</strong>.
+        Serving Worcester, PA and surrounding areas.
+      </p>
+
+      <div class="ctaRow">
+        <a class="btn btnPrimary" href="tel:+12674773247">Call 267-4REPAIR</a>
+        <a class="btn btnGhost" href="/request-service.html">Request Service</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- SERVICES OVERVIEW -->
+    <section class="section" id="services">
+      <h2>Services</h2>
+      <p class="small">Choose a category below to see what we repair and the services we offer.</p>
+
+      <div class="grid" style="margin-top:14px;">
+        <div class="card">
+          <a href="/services/home-repairs/">
+            <h3>Home Repairs</h3>
+            <div class="small">
+              Practical fixes and upgrades—doors, hardware, drywall patches, fixtures, and more.
+            </div>
+            <div class="badges">
+              <span class="badge">Carpentry</span>
+              <span class="badge">Doors</span>
+              <span class="badge">Drywall</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="/services/auto-repairs/">
+            <h3>Auto Repairs</h3>
+            <div class="small">
+              Maintenance and repairs to keep you on the road—diagnostics, brakes, no-start, and more.
+            </div>
+            <div class="badges">
+              <span class="badge">Diagnostics</span>
+              <span class="badge">Maintenance</span>
+              <span class="badge">Brakes</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="/services/small-engine-repairs/">
+            <h3>Small Engine Repairs</h3>
+            <div class="small">
+              Lawn and outdoor equipment service—mowers, snow blowers, generators, trimmers, and more.
+            </div>
+            <div class="badges">
+              <span class="badge">Tune-up</span>
+              <span class="badge">Carb</span>
+              <span class="badge">No-start</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="ctaRow" style="margin-top:18px;">
+        <a class="btn btnPrimary" href="/services/">View All Services</a>
+        <a class="btn" style="border:1px solid rgba(17,24,39,.12); background:#fff;" href="tel:+12674773247">Call</a>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <h2>Typical Pricing</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Diagnostic</h3>
+          <div class="small">Baseline evaluation + estimate.</div>
+          <div style="margin-top:10px;font-weight:900;font-size:22px;">$45+</div>
+        </div>
+
+        <div class="card">
+          <h3>Hourly Labor</h3>
+          <div class="small">Standard labor rate (job dependent).</div>
+          <div style="margin-top:10px;font-weight:900;font-size:22px;">$80/hr</div>
+        </div>
+
+        <div class="card">
+          <h3>Common Services</h3>
+          <div class="small">Tune-ups, minor repairs, adjustments.</div>
+          <div style="margin-top:10px;font-weight:900;font-size:22px;">Varies</div>
+        </div>
+      </div>
+      <p class="small" style="margin-top:10px;">
+        Final price depends on parts and labor. We’ll confirm before proceeding.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+
+      <div class="split">
+        <div class="card">
+          <h3>Request Service</h3>
+          <p class="small">
+            Use our service request form and include as much detail as possible (photos help).
+            If urgent, call <a href="tel:+12674773247"><strong>267-4REPAIR</strong></a>.
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn btnPrimary" href="/request-service.html">Request Service</a>
+            <a class="btn" style="border:1px solid rgba(17,24,39,.12); background:#fff;" href="tel:+12674773247">Call</a>
+          </div>
+
+          <ul class="list">
+            <li><strong>Email:</strong> <a href="mailto:ben@richerrepairs.com">ben@richerrepairs.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+12674773247">267-4REPAIR</a> <span class="small">(267-477-3247)</span></li>
+            <li><strong>Service Area:</strong> Worcester, PA and surrounding areas</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Service Area</h3>
+          <p class="small">
+            Based in <strong>Worcester, PA</strong>, proudly serving Montgomery County and surrounding areas.
+          </p>
+
+          <iframe
+            width="100%"
+            height="260"
+            style="border:0;border-radius:12px;"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Worcester,%20PA&t=&z=12&ie=UTF8&iwloc=&output=embed">
+          </iframe>
+
+          <p class="small" style="margin-top:10px;">
+            Not sure if you're in range? Call <a href="tel:+12674773247">267-4REPAIR</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        © 2026 Richer Repairs™ • Worcester, PA •
+        <a href="tel:+12674773247">267-4REPAIR (267-477-3247)</a>
+      </p>
+    </div>
+  </footer>
+
+  <a class="callFloat" href="tel:+12674773247">📞 267-4REPAIR</a>
+
+  <!-- Local SEO / NAP consistency -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Richer Repairs",
+    "url": "https://www.richerrepairs.com",
+    "telephone": "+1-267-477-3247",
+    "email": "ben@richerrepairs.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Worcester",
+      "addressRegion": "PA",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      "Worcester, PA",
+      "Norristown, PA",
+      "Collegeville, PA",
+      "Lansdale, PA",
+      "Blue Bell, PA",
+      "Phoenixville, PA",
+      "Skippack, PA"
+    ],
+    "serviceType": [
+      "Home repairs",
+      "Auto repairs",
+      "Small engine repairs"
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+</body>
+</html>
