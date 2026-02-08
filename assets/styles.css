@@ -37,7 +37,7 @@ header {
 .nav {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 16px 20px;
+  padding: 20px 20px;    /* slightly taller header */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -301,8 +301,9 @@ header .btnGhost:hover {
    Header Logo
    ========================= */
 .site-logo {
-  height: 48px;
+  height: 84px;          /* 🔼 was ~48–64px */
   width: auto;
+  display: block;
 }
 
 /* =========================
@@ -337,6 +338,12 @@ header .btnGhost:hover {
    ========================= */
 @media (max-width: 520px) {
   .container { padding: 0 16px; }
-  .nav { padding: 12px 16px; }
-  .site-logo { height: 40px; }
+
+  .nav {
+    padding: 14px 16px;   /* slightly taller for the bigger logo */
+  }
+
+  .site-logo {
+    height: 64px;        /* bigger logo on mobile, still safe */
+  }
 }
